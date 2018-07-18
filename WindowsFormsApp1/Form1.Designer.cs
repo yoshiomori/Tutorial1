@@ -141,7 +141,6 @@
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All File" +
     "s (*.*)|*.*";
             this.openFileDialog1.Title = "Selecione um arquivo de imagem";

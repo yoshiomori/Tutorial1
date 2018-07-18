@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -19,6 +12,9 @@ namespace WindowsFormsApp1
 
         private void showButton_Click(object sender, EventArgs e)
         {
+            openFileDialog1.InitialDirectory = Environment.GetEnvironmentVariable("HOMEDRIVE")
+                + Environment.GetEnvironmentVariable("HOMEPATH")
+                + "\\Pictures";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Load(openFileDialog1.FileName);
